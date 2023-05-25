@@ -1,0 +1,104 @@
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #111927;
+  background-image: 
+      radial-gradient(at 47% 33%, hsl(162.00, 77%, 40%) 0, transparent 59%), 
+      radial-gradient(at 82% 65%, hsl(218.00, 39%, 11%) 0, transparent 55%);
+      background-repeat:fill;
+  }
+input {
+  color: #f6f6f6;
+  border: 2px solid #520ec8;
+  border-radius: 10px;
+  padding: 10px 25px;
+  background: transparent;
+  width: 30%;
+  height: 30%;
+  font-size: large;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: center;
+  position: sticky;
+
+ }
+ 
+ input:active {
+  box-shadow: 2px 2px 15px #5b0aa8 inset;
+ }
+ ::placeholder{
+  color: #f6f6f6;
+ }
+
+.Header {
+  background-color: #111927;
+  height: 100px;
+  display: flex;
+ justify-content: center;
+  align-items: center;
+}
+
+
+
+.cryptoDisplay {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  width: 90vw;
+  flex-wrap: wrap;
+  row-gap: 40px;
+  column-gap: 10px;
+  margin-left: 4%;
+}
+
+
+.coin img {
+  height: 100px;
+}
+
+@media (max-width:500px) and (min-width:400px) {
+  .cryptoDisplay {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    width: 90vw;
+    flex-wrap: wrap;
+    row-gap: 40px;
+    column-gap: 10px;
+    margin-left: 4%;
+  }
+  ::placeholder{
+    color: #f6f6f6;
+    font-size: 12px;
+   }
+}
+@media (max-width:400px) and (min-width:300px) {
+  .cryptoDisplay {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    width: 90vw;
+    flex-wrap: wrap;
+    row-gap: 40px;
+    column-gap: 10px;
+    margin-left: 4%;
+  }
+  ::placeholder{
+    color: #f6f6f6;
+    font-size: 10px;
+   }
+   input{
+    height: 20%;
+   }
+}
+@media (max-width:300px) and (min-width:270px){
+  ::placeholder{
+    color: #f6f6f6;
+    font-size: 8px;
+   }
+   input{
+    height: 10%;
+   }
+}
